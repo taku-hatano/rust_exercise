@@ -8,7 +8,6 @@ name = "rust_exercise"
 crate-type = ["cdylib", "rlib"]
 
 [features]
-default = ["python", "nodejs"]
 python = ["pyo3/extension-module"]
 nodejs = ["wasm-bindgen", "serde/derive", "tsify", "strum/derive"]
 
