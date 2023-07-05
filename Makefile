@@ -1,7 +1,7 @@
 build: build_cargo build_python build_nodejs
 
 build_cargo:
-	cargo build
+	cargo build --release
 
 build_python:
 	maturin build -i python3 --release --features python
