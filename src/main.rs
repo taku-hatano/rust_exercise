@@ -51,10 +51,8 @@ fn main() {
 
         println!("\n**** Lexer Result ****");
         let mut lexer = Lexer::new(input.as_str());
-        let mut token = lexer.token();
-        while token.is_some() {
+        while let Some(token) = lexer.token() {
             println!("{:?}", token);
-            token = lexer.token();
         }
 
         let lexer = Lexer::new(input.as_str());
